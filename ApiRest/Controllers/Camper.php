@@ -39,6 +39,6 @@ $Body = json_decode(file_get_contents("php://input"),true);
         $Camper->FechaNacimiento = $Body["FechaNacimiento"];
         $Camper->IdRegion = $Body["IdRegion"];
         $OldId=$Body["OldId"];
-        $Camper->Insert($OldId);
+        $Camper->Update($OldId);
  }
 ?>
